@@ -28,7 +28,7 @@ body {
   -webkit-text-stroke: 0.3vh #faf8f894; }
 
 .manifesto {
-  font-family: 50pt, "Playfair Display", serif;
+  font-family: 3.125rem, "Playfair Display", serif;
   color: #faf8f894;
   text-align: center; }
 
@@ -60,12 +60,12 @@ h2 {
   font-family: "Barlow Condensed", sans-serif;
   color: #faf8f894;
   font-size: 1.25 rem;
-  margin: 20px; }
+  margin: 1.25 rem; }
 
 p {
   font-family: "Barlow Condensed", sans-serif;
   color: #f75188;
-  font-size: 16pt;
+  font-size: 1rem;
   margin: 20px 20px 50px 50px;
   text-align: justify; }
 

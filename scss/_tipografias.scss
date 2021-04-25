@@ -1,5 +1,5 @@
 $style-casa-mansa-font: "Playfair Display", serif;
-$style-casa-manifesto: 50pt, "Playfair Display", serif;
+$style-casa-manifesto: 3.125rem, "Playfair Display", serif;
 $style-sections: "Playfair Display", serif;
 $style-slim: "Barlow Condensed", sans-serif;
 $style1-color: #faf8f894; 
@@ -51,13 +51,13 @@ h2 {
     font-family: $style-slim;
     color: $style1-color;
     font-size: 1.25 rem;
-    margin: 20px;
+    margin: 1.25 rem;
 }
 
 p {
     font-family: $style-slim;
     color: $style2-color;
-    font-size: 16pt;
+    font-size: 1rem;
     margin: 20px 20px 50px 50px;
     text-align: justify;
 }
