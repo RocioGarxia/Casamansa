@@ -1,0 +1,83 @@
+$color: crimson;
+
+/* ACA PISO ALGUNAS CARACTERISTICAS DEL CARROUSEL*/
+
+.carousel-item {
+    height: 25rem;
+  }
+  
+  h5 {
+    margin-top: 200px;
+    font-size: 15rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  /* ACA PISO ALGUNAS CARACTERISTICAS DEL MODAL*/
+  
+  .modal-content {
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec8e 0%, #fc575f8e 74%);
+  }
+  
+  .btn-primary {
+    background-color: $color;
+  }
+  
+  #exampleModalLabel {
+    font-size: 50pt !important;
+    margin-top: 2px;
+  }
+  
+  .subtitle {
+    color: black;
+  }
+  
+  .contact {
+    margin-top: 150px;
+    margin-left: 150px;
+  }
+  
+  .hablemos {
+    font-size: 40px;
+    text-align: center;
+    background-color: $color;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  
+  .center {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .bg-gradient {
+    background-color: #eec0c60c;
+  background-image: linear-gradient(315deg, #eec0c60e 0%, #7ee7fa0e 74%);
+  
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  .navbar-brand {
+    color: crimson !important;
+    font-family: "Barlow Condensed", sans-serif !important; 
+  }
+
+  .nav-link:hover {
+    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.62rem;
+  }
+  
+  .navbar-brand:hover {
+    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.62rem;
+  }
+  

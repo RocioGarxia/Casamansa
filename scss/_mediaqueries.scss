@@ -1,0 +1,148 @@
+@media screen and (max-width: 576px) {
+    /* propiedades Css para mobile first */
+    .nombreEstudio {
+      font-size: 20px;
+    }
+  
+    .manifesto {
+      font-size: 16px;
+    }
+  
+    .nav li a {
+      font-size: 12pt;
+      display: block;
+      float: none;
+      width: 100%;
+    }
+  
+    footer {
+      font-size: 12pt;
+    }
+  
+    #grillaIndex {
+      display: grid;
+      grid-template-areas:
+        "menu menu menu"
+        "logo logo logo"
+        "titulo titulo titulo"
+        "pie pie pie";
+      grid-template-rows: 1.875rem 30px 1fr 2fr 1fr;
+      grid-template-columns: 33% 33% auto;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+    }
+  
+    header {
+      grid-area: menu;
+    }
+  
+    #logo {
+      grid-area: logo;
+    }
+  
+    #Estudio {
+      grid-area: titulo;
+    }
+  
+    footer {
+      grid-area: pie;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* propiedades Css para tablet */
+  
+    .nombreEstudio {
+      font-size: 100px;
+    }
+  
+    .manifesto {
+      font-size: 20px;
+    }
+  
+    .nav li a {
+      font-size: 16pt;
+    }
+  
+    footer {
+      font-size: 12pt;
+    }
+  
+    #grillaIndex {
+      display: grid;
+      grid-template-areas:
+        "menu menu menu"
+        "logo logo logo"
+        "titulo titulo titulo"
+        "pie pie pie";
+      grid-template-rows: 30px 1fr 2fr 1fr;
+      grid-template-columns: 33% 33% auto;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+    }
+  
+    header {
+      grid-area: menu;
+    }
+  
+    #logo {
+      grid-area: logo;
+    }
+  
+    #Estudio {
+      grid-area: titulo;
+    }
+  
+    footer {
+      grid-area: pie;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* propiedades Css para escritorio */
+  
+    .nombreEstudio {
+      font-size: 70px;
+    }
+  
+    .manifesto {
+      font-size: 40px;
+    }
+  
+    .nav li a {
+      font-size: 18pt;
+    }
+  
+    footer {
+      font-size: 18px;
+    }
+  
+    #grillaIndex {
+      display: grid;
+      grid-template-areas:
+        "menu menu menu"
+        "logo logo logo"
+        "titulo titulo titulo"
+        "pie pie pie";
+      grid-template-rows: 30px 1fr 2fr 1fr;
+      grid-template-columns: 33% 33% auto;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+    }
+  
+    header {
+      grid-area: menu;
+    }
+  
+    #logo {
+      grid-area: logo;
+    }
+  
+    #Estudio {
+      grid-area: titulo;
+    }
+  
+    footer {
+      grid-area: pie;
+    }
+  }

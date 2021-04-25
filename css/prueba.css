@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Playfair+Display:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+/* ACA DECLARO LA VARIABLE MARGIN */
+/* ACA OPERO + SOBRE LA VARIABLE MARGIN */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem; }
+
+body {
+  background: url(../Imagenes/fondoInk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center; }
+
+.nombreEstudio {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  font-size: 9.375rem;
+  color: rgba(56, 67, 231, 0);
+  text-align: center;
+  -webkit-text-stroke: 0.3vh #faf8f894; }
+
+.manifesto {
+  font-family: 50pt, "Playfair Display", serif;
+  color: #faf8f894;
+  text-align: center; }
+
+.titulosSecciones {
+  font-family: "Playfair Display", serif;
+  font-size: 50pt;
+  color: #faf8f894;
+  width: 100%;
+  margin-top: 3.75rem;
+  text-align: center;
+  position: relative; }
+
+.titulosSecciones::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  color: #faf8f894;
+  -webkit-text-stroke: 0vh rgba(56, 68, 231, 0.349);
+  border-right: 5px solid #f75188;
+  overflow: hidden;
+  animation: casaMansa 6s linear infinite; }
+
+h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #faf8f894;
+  font-size: 20pt;
+  margin: 20px; }
+
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f75188;
+  font-size: 16pt;
+  margin: 20px 20px 50px 50px;
+  text-align: justify; }
+
+footer {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #faf8f894;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1.875rem; }
+
+legend {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #040300;
+  font-size: 20pt;
+  padding: 2px; }
+
+div {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f75188;
+  font-size: 15pt;
+  padding: 2px; }
+
+#grillaProyectos {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "fotografias pinturas videos" "fotografias pinturas videos" "pie pie pie";
+  grid-template-rows: 1fr 3fr 4.37px 2fr;
+  grid-template-columns: 30% 30% auto;
+  grid-column-gap: 1.16rem;
+  grid-row-gap: 2.25rem; }
+
+.titulosSecciones {
+  grid-area: titulo; }
+
+footer {
+  grid-area: pie; }
+
+section#fotografias {
+  grid-area: fotografias; }
+
+section#pinturas {
+  grid-area: pinturas; }
+
+section#videos {
+  grid-area: videos; }
+
+/*propiedades grids en seccion nosotros*/
+#grillaNosotros {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "rgc mat edg" "pie pie pie";
+  grid-template-rows: 2fr 10rem 2fr;
+  grid-template-columns: 30% 30% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 4rem; }
+
+.titulosSecciones {
+  grid-area: titulo; }
+
+footer {
+  grid-area: pie; }
+
+section#rgc {
+  grid-area: rgc; }
+
+section#mat {
+  grid-area: mat; }
+
+section#edg {
+  grid-area: edg; }
+
+@keyframes titulosSecciones {
+  0% {
+    font-size: 30pt;
+    color: #faf8f81e; }
+  50% {
+    font-size: 35pt;
+    color: #faf8f865; }
+  100% {
+    font-size: 40pt;
+    color: #faf8f894; } }
+
+@keyframes CasaMansa {
+  0% {
+    width: 0; }
+  10% {
+    width: 10%; }
+  25% {
+    width: 25%; }
+  50% {
+    width: 50%; }
+  75% {
+    width: 75%; }
+  100% {
+    width: 100%; } }
+
+@keyframes Nosotros {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.1, 1.1); }
+  100% {
+    transform: scale(1.2, 1.2); } }
+
+@media screen and (max-width: 576px) {
+  /* propiedades Css para mobile first */
+  .nombreEstudio {
+    font-size: 20px; }
+  .manifesto {
+    font-size: 16px; }
+  .nav li a {
+    font-size: 12pt;
+    display: block;
+    float: none;
+    width: 100%; }
+  footer {
+    font-size: 12pt; }
+  #grillaIndex {
+    display: grid;
+    grid-template-areas: "menu menu menu" "logo logo logo" "titulo titulo titulo" "pie pie pie";
+    grid-template-rows: 1.875rem 30px 1fr 2fr 1fr;
+    grid-template-columns: 33% 33% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px; }
+  header {
+    grid-area: menu; }
+  #logo {
+    grid-area: logo; }
+  #Estudio {
+    grid-area: titulo; }
+  footer {
+    grid-area: pie; } }
+
+@media screen and (max-width: 768px) {
+  /* propiedades Css para tablet */
+  .nombreEstudio {
+    font-size: 100px; }
+  .manifesto {
+    font-size: 20px; }
+  .nav li a {
+    font-size: 16pt; }
+  footer {
+    font-size: 12pt; }
+  #grillaIndex {
+    display: grid;
+    grid-template-areas: "menu menu menu" "logo logo logo" "titulo titulo titulo" "pie pie pie";
+    grid-template-rows: 30px 1fr 2fr 1fr;
+    grid-template-columns: 33% 33% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px; }
+  header {
+    grid-area: menu; }
+  #logo {
+    grid-area: logo; }
+  #Estudio {
+    grid-area: titulo; }
+  footer {
+    grid-area: pie; } }
+
+@media (max-width: 992px) {
+  /* propiedades Css para escritorio */
+  .nombreEstudio {
+    font-size: 70px; }
+  .manifesto {
+    font-size: 40px; }
+  .nav li a {
+    font-size: 18pt; }
+  footer {
+    font-size: 18px; }
+  #grillaIndex {
+    display: grid;
+    grid-template-areas: "menu menu menu" "logo logo logo" "titulo titulo titulo" "pie pie pie";
+    grid-template-rows: 30px 1fr 2fr 1fr;
+    grid-template-columns: 33% 33% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px; }
+  header {
+    grid-area: menu; }
+  #logo {
+    grid-area: logo; }
+  #Estudio {
+    grid-area: titulo; }
+  footer {
+    grid-area: pie; } }
+
+/* ACA PISO ALGUNAS CARACTERISTICAS DEL CARROUSEL*/
+.carousel-item {
+  height: 25rem; }
+
+h5 {
+  margin-top: 200px;
+  font-size: 15rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px black; }
+
+/* ACA PISO ALGUNAS CARACTERISTICAS DEL MODAL*/
+.modal-content {
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec8e 0%, #fc575f8e 74%); }
+
+.btn-primary {
+  background-color: crimson; }
+
+#exampleModalLabel {
+  font-size: 50pt !important;
+  margin-top: 2px; }
+
+.subtitle {
+  color: black; }
+
+.contact {
+  margin-top: 150px;
+  margin-left: 150px; }
+
+.hablemos {
+  font-size: 40px;
+  text-align: center;
+  background-color: crimson;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Barlow Condensed", sans-serif; }
+
+.center {
+  text-align: center;
+  margin-top: 100px; }
+
+.bg-gradient {
+  background-color: #eec0c60c;
+  background-image: linear-gradient(315deg, #eec0c60e 0%, #7ee7fa0e 74%); }
+
+.nav-link {
+  color: white !important; }
+
+.navbar-brand {
+  color: crimson !important;
+  font-family: "Barlow Condensed", sans-serif !important; }
+
+.nav-link:hover {
+  background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
+  color: black;
+  font-weight: bold;
+  font-size: 1.62rem; }
+
+.navbar-brand:hover {
+  background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
+  color: black;
+  font-weight: bold;
+  font-size: 1.62rem; }
+
+/*propiedades imagenes*/
+/* ACA USO LA VARIABLE MARGIN para margin top Y LA MULTIPLICO POR 4 Y AL RESULTADO LE RESTO 0.8*/
+#logo {
+  margin: auto;
+  margin-top: 4.2rem;
+  width: 3.125rem;
+  height: auto;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+/* ACA USO LA VARIABLE MARGIN para margin left Y LA MULTIPLICO POR 2.5 */
+.img {
+  display: flex;
+  display: inline;
+  flex-flow: row, wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  flex: 1;
+  margin-left: 3.125rem;
+  overflow: hidden;
+  transform: scale(1.2, 1.2);
+  animation: Nosotros 2s; }

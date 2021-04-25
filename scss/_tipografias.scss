@@ -1,0 +1,88 @@
+$style-casa-mansa-font: "Playfair Display", serif;
+$style-casa-manifesto: 50pt, "Playfair Display", serif;
+$style-sections: "Playfair Display", serif;
+$style-slim: "Barlow Condensed", sans-serif;
+$style1-color: #faf8f894; 
+$style2-color: #f75188;
+$style-sections-width: 100%;
+
+.nombreEstudio {
+    font-family: $style-casa-mansa-font;
+    position: relative;
+    font-size: 9.375rem;
+    color: rgba(56, 67, 231, 0);
+    text-align: center;
+    -webkit-text-stroke: 0.3vh $style1-color ;
+}
+
+.manifesto {
+    font-family: $style-casa-manifesto;
+    color: $style1-color;
+    text-align: center;
+}
+
+.titulosSecciones {
+    font-family: $style-sections;
+    font-size: 50pt;
+    color: $style1-color;
+    width: $style-sections-width;
+    margin-top: 3.75rem;
+    text-align: center;
+    position: relative;
+    }  
+
+.titulosSecciones::before {
+        content: attr(data-text);
+        position: absolute; 
+        z-index: 999;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        color: $style1-color;
+        -webkit-text-stroke: 0vh rgba(56, 68, 231, 0.349);
+        border-right: 5px solid $style2-color;
+        overflow: hidden;
+        animation: casaMansa 6s linear infinite;
+        }
+
+h2 {
+    font-family: $style-slim;
+    color: $style1-color;
+    font-size: 20pt;
+    margin: 20px;
+}
+
+p {
+    font-family: $style-slim;
+    color: $style2-color;
+    font-size: 16pt;
+    margin: 20px 20px 50px 50px;
+    text-align: justify;
+}
+
+footer {
+    font-family: $style-slim;
+    color: $style1-color;
+    width: $style-sections-width;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1.875rem;
+}
+
+legend {
+    font-family: $style-slim;
+    color: rgb(4, 3, 0);
+    font-size: 20pt;
+    padding: 2px;
+}
+
+div {
+    font-family: $style-slim;
+    color: $style2-color;
+    font-size: 15pt;
+    padding: 2px;
+}

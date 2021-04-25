@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* ACA DECLARO LA VARIABLE MARGIN */
+
+$margin: 1.25rem;
+
+/* ACA OPERO + SOBRE LA VARIABLE MARGIN */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: $margin+0.5;
+}
+
+body {
+  background: url(../Imagenes/fondoInk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Playfair+Display:wght@700&display=swap');
+
+@import "tipografias";
+@import "grillas";
+@import "keyframes";
+@import "mediaqueries";
+@import "carsbs";
+
+/*propiedades imagenes*/
+
+/* ACA USO LA VARIABLE MARGIN para margin top Y LA MULTIPLICO POR 4 Y AL RESULTADO LE RESTO 0.8*/
+
+#logo {
+  margin: auto;
+  margin-top: ($margin*4)-0.8;
+  width: 3.125rem;
+  height: auto;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ACA USO LA VARIABLE MARGIN para margin left Y LA MULTIPLICO POR 2.5 */
+
+.img {
+  display: flex;
+  display: inline;
+  flex-flow: row, wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  flex: 1;
+  margin-left: $margin*2.5;
+  overflow: hidden;
+  transform: scale(1.2, 1.2);
+  animation: Nosotros 2s;
+}
