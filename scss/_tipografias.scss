@@ -12,7 +12,8 @@ $style-sections-width: 100%;
     font-size: 9.375rem;
     color: rgba(56, 67, 231, 0);
     text-align: center;
-    -webkit-text-stroke: 0.3vh $style1-color ;
+    -webkit-text-stroke: 0.3vh $style1-color;
+    animation: casaMansa 6s linear infinite;
 }
 
 .manifesto {
@@ -28,24 +29,8 @@ $style-sections-width: 100%;
     width: $style-sections-width;
     margin-top: 3.75rem;
     text-align: center;
-    position: relative;
+    animation: titulosSecciones 6s linear infinite;
     }  
-
-.titulosSecciones::before {
-        content: attr(data-text);
-        position: absolute; 
-        z-index: 999;
-        text-align: center;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        color: $style1-color;
-        -webkit-text-stroke: 0vh rgba(56, 68, 231, 0.349);
-        border-right: 5px solid $style2-color;
-        overflow: hidden;
-        animation: casaMansa 6s linear infinite;
-        }
 
 h2 {
     font-family: $style-slim;

@@ -25,7 +25,8 @@ body {
   font-size: 9.375rem;
   color: rgba(56, 67, 231, 0);
   text-align: center;
-  -webkit-text-stroke: 0.3vh #faf8f894; }
+  -webkit-text-stroke: 0.3vh #faf8f894;
+  animation: casaMansa 6s linear infinite; }
 
 .manifesto {
   font-family: 3.125rem, "Playfair Display", serif;
@@ -39,22 +40,7 @@ body {
   width: 100%;
   margin-top: 3.75rem;
   text-align: center;
-  position: relative; }
-
-.titulosSecciones::before {
-  content: attr(data-text);
-  position: absolute;
-  z-index: 999;
-  text-align: center;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  color: #faf8f894;
-  -webkit-text-stroke: 0vh rgba(56, 68, 231, 0.349);
-  border-right: 5px solid #f75188;
-  overflow: hidden;
-  animation: casaMansa 6s linear infinite; }
+  animation: titulosSecciones 6s linear infinite; }
 
 h2 {
   font-family: "Barlow Condensed", sans-serif;
@@ -140,28 +126,22 @@ section#edg {
 
 @keyframes titulosSecciones {
   0% {
-    font-size: 30pt;
+    transform: translateY(0);
     color: #faf8f81e; }
   50% {
-    font-size: 35pt;
+    transform: translateY(20px);
     color: #faf8f865; }
   100% {
-    font-size: 40pt;
+    transform: translateY(0);
     color: #faf8f894; } }
 
-@keyframes CasaMansa {
+@keyframes casaMansa {
   0% {
-    width: 0; }
-  10% {
-    width: 10%; }
-  25% {
-    width: 25%; }
+    transform: translateY(0); }
   50% {
-    width: 50%; }
-  75% {
-    width: 75%; }
+    transform: translateY(15px); }
   100% {
-    width: 100%; } }
+    transform: translateY(0); } }
 
 @keyframes Nosotros {
   0% {
