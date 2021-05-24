@@ -1,11 +1,11 @@
 @media screen and (max-width: 576px) {
   /* propiedades Css para mobile first */
-  .nombreEstudio {
-    font-size: 1rem;
+  .mainTitle {
+    font-size: 5rem;
   }
 
   .manifesto {
-    font-size: 1rem;
+    font-size: .4rem;
   }
 
   .nav li a {
@@ -47,46 +47,17 @@
     grid-row-gap: 8rem;
     margin-left: 20px;
   }
-
-  #grillaIndex {
-    display: grid;
-    grid-template-areas:
-      "menu menu menu"
-      "logo logo logo"
-      "titulo titulo titulo"
-      "pie pie pie";
-    grid-template-rows: 1.875rem 30px 1fr 2fr 1fr;
-    grid-template-columns: 33% 33% auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
-  }
-
-  header {
-    grid-area: menu;
-  }
-
-  #logo {
-    grid-area: logo;
-  }
-
-  #Estudio {
-    grid-area: titulo;
-  }
-
-  footer {
-    grid-area: pie;
-  }
 }
 
 @media screen and (max-width: 768px) {
   /* propiedades Css para tablet */
 
-  .nombreEstudio {
-    font-size: 100px;
+  .mainTitle {
+    font-size: 6rem;
   }
 
   .manifesto {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .nav li a {
@@ -96,46 +67,17 @@
   footer {
     font-size: 12pt;
   }
-
-  #grillaIndex {
-    display: grid;
-    grid-template-areas:
-      "menu menu menu"
-      "logo logo logo"
-      "titulo titulo titulo"
-      "pie pie pie";
-    grid-template-rows: 30px 1fr 2fr 1fr;
-    grid-template-columns: 33% 33% auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
-  }
-
-  header {
-    grid-area: menu;
-  }
-
-  #logo {
-    grid-area: logo;
-  }
-
-  #Estudio {
-    grid-area: titulo;
-  }
-
-  footer {
-    grid-area: pie;
-  }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   /* propiedades Css para escritorio */
 
-  .nombreEstudio {
-    font-size: 70px;
+  .mainTitle {
+    font-size: 7rem;
   }
 
   .manifesto {
-    font-size: 40px;
+    font-size: 1.5rem;
   }
 
   .nav li a {
@@ -144,34 +86,5 @@
 
   footer {
     font-size: 18px;
-  }
-
-  #grillaIndex {
-    display: grid;
-    grid-template-areas:
-      "menu menu menu"
-      "logo logo logo"
-      "titulo titulo titulo"
-      "pie pie pie";
-    grid-template-rows: 30px 1fr 2fr 1fr;
-    grid-template-columns: 33% 33% auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
-  }
-
-  header {
-    grid-area: menu;
-  }
-
-  #logo {
-    grid-area: logo;
-  }
-
-  #Estudio {
-    grid-area: titulo;
-  }
-
-  footer {
-    grid-area: pie;
   }
 }
