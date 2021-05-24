@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-position: center; }
 
-.nombreEstudio {
+.mainTitle {
   font-family: "Playfair Display", serif;
   position: relative;
   font-size: 9.375rem;
@@ -46,12 +46,12 @@ h2 {
   font-family: "Barlow Condensed", sans-serif;
   color: #faf8f894;
   font-size: 1.25 rem;
-  margin: 1.25 rem; }
+  margin: 5 rem; }
 
 p {
   font-family: "Barlow Condensed", sans-serif;
   color: #f75188;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 20px 20px 50px 50px;
   text-align: justify; }
 
@@ -65,6 +65,14 @@ footer {
   bottom: 0;
   margin-bottom: 1.875rem; }
 
+li {
+  padding: 5px;
+  list-style: none;
+  display: inline-block; }
+
+li a {
+  color: cornsilk; }
+
 legend {
   font-family: "Barlow Condensed", sans-serif;
   color: #040300;
@@ -76,6 +84,10 @@ div {
   color: #f75188;
   font-size: 15pt;
   padding: 2px; }
+
+.novedadesContainer {
+  width: 80%;
+  margin: auto; }
 
 #grillaProyectos {
   display: grid;
@@ -154,16 +166,32 @@ section#edg {
 @media screen and (max-width: 576px) {
   /* propiedades Css para mobile first */
   .nombreEstudio {
-    font-size: 20px; }
+    font-size: 1rem; }
   .manifesto {
-    font-size: 16px; }
+    font-size: 1rem; }
   .nav li a {
     font-size: 12pt;
     display: block;
     float: none;
     width: 100%; }
   footer {
-    font-size: 12pt; }
+    font-size: 9pt; }
+  #grillaNosotros {
+    display: grid;
+    grid-template-areas: "titulo" "rgc" "mat" "edg";
+    grid-template-rows: 2fr;
+    grid-template-columns: 70%;
+    grid-column-gap: 10px;
+    grid-row-gap: 8rem;
+    margin-left: 20px; }
+  #grillaProyectos {
+    display: grid;
+    grid-template-areas: "titulo" "fotografias" "pinturas" "videos" "pie";
+    grid-template-rows: 2fr;
+    grid-template-columns: 70%;
+    grid-column-gap: 10px;
+    grid-row-gap: 8rem;
+    margin-left: 20px; }
   #grillaIndex {
     display: grid;
     grid-template-areas: "menu menu menu" "logo logo logo" "titulo titulo titulo" "pie pie pie";
@@ -237,8 +265,8 @@ section#edg {
   height: 25rem; }
 
 h5 {
-  margin-top: 200px;
-  font-size: 15rem;
+  margin-top: 12.5rem;
+  font-size: 5rem;
   font-weight: bold;
   text-shadow: 2px 2px 10px black; }
 
@@ -279,22 +307,20 @@ h5 {
 
 .nav-link {
   color: white !important; }
+  .nav-link:hover {
+    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.62rem; }
 
 .navbar-brand {
   color: crimson !important;
   font-family: "Barlow Condensed", sans-serif !important; }
-
-.nav-link:hover {
-  background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
-  color: black;
-  font-weight: bold;
-  font-size: 1.62rem; }
-
-.navbar-brand:hover {
-  background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
-  color: black;
-  font-weight: bold;
-  font-size: 1.62rem; }
+  .navbar-brand:hover {
+    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.62rem; }
 
 /*propiedades imagenes*/
 /* ACA USO LA VARIABLE MARGIN para margin top Y LA MULTIPLICO POR 4 Y AL RESULTADO LE RESTO 0.8*/
@@ -316,6 +342,7 @@ h5 {
   justify-content: space-around;
   align-items: baseline;
   flex: 1;
+  padding: 0.7rem;
   margin-left: 3.125rem;
   overflow: hidden;
   transform: scale(1.2, 1.2);

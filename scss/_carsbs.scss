@@ -7,8 +7,8 @@ $color: crimson;
   }
   
   h5 {
-    margin-top: 200px;
-    font-size: 15rem;
+    margin-top: 12.5rem;
+    font-size: 5rem;
     font-weight: bold;
     text-shadow: 2px 2px 10px black;
   }
@@ -60,24 +60,24 @@ $color: crimson;
 
   .nav-link {
     color: white !important;
+
+   &:hover {
+    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.62rem;
+   }
   }
 
   .navbar-brand {
     color: crimson !important;
     font-family: "Barlow Condensed", sans-serif !important; 
-  }
-
-  .nav-link:hover {
-    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
-    color: black;
-    font-weight: bold;
-    font-size: 1.62rem;
-  }
   
-  .navbar-brand:hover {
+ &:hover {
     background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 74%);
     color: black;
     font-weight: bold;
     font-size: 1.62rem;
   }
+}
   
