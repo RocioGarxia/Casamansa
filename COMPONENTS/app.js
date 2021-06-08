@@ -78,3 +78,12 @@ function agregarAlCarrito(id) {
     }
 
     revisarLocal () */
+
+    let MiFormulario = document.getElementById("EnviarFormulario");
+MiFormulario.addEventListener ("submit", validarFormulario);
+
+function validarFormulario (evt){
+    evt.preventDefault ();
+    console.log(formulario.children [0].value);
+    console.log(formulario.children [1].value);
+}
