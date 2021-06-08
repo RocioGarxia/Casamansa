@@ -88,3 +88,25 @@ div {
   width: 80%;
   margin: auto;
 }
+
+#boton-carrito {
+   color: cornsilk;
+  background-color: #eec0c60c;
+  background-image: linear-gradient(315deg, #eec0c60e 0%, #7ee7fa0e 54%);
+  padding: 5px;
+  border-style: none;
+  margin-left: 10px;
+
+  &:hover {
+    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 54%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.62rem;
+   }
+  }
+
+  
+ .producto p {
+  padding: 0px !important;
+  margin: 10px 0px 10px 0px !important;
+}

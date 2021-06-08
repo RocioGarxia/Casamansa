@@ -9,7 +9,7 @@
     <meta name="description" content="Casa Mansa es un estudio de arte, arquitectura y diseño. Conocénos!">
     <meta name="keywords" content="Arte, Arquitectura, Diseño, Proyectos, Fotografias, Pinturas, Videos">
 
-    <title>Proyectos</title>
+    <title>Productos</title>
     <!--aquí el nombre que aparecerá en la pestaña del navegador-->
 
     <!--LINKEO BOOSTRAP-->
@@ -26,61 +26,104 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/prueba.css">
+
     <script src="https://kit.fontawesome.com/473ae79e8d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+
+    <script defer src="COMPONENTS/stock.js"></script>
+    <script defer src="COMPONENTS/app.js"></script>
 
 </head>
 
 <body>
 
-        <!--Código BS menu-->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
-                <a class="navbar-brand" href="index.html">Casa Mansa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!--Código BS menu-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+            <a class="navbar-brand" href="index.html">Casa Mansa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="proyectos.html" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Proyectos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="proyectos.html">Fotografías</a>
-                                <a class="dropdown-item" href="proyectos.html">Pinturas</a>
-                                <a class="dropdown-item" href="proyectos.html">Videos</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">Novedades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar en Casa Mansa</button>
-                    </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="proyectos.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="proyectos.html">Fotografías</a>
+                            <a class="dropdown-item" href="proyectos.html">Pinturas</a>
+                            <a class="dropdown-item" href="proyectos.html">Videos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar en Casa Mansa</button>
+                    <button id="boton-carrito" type="button" data-toggle="modal" data-target="#exampleModal"> Shop! <i
+                            class="fas fa-shopping-cart"></i> <span id="contadorCarrito">0</span></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!--    <section id="grillaProyectos"> -->
+
+    <main id="contenedor-productos">
+
+    </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aquí está tu compra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-            </nav>
-        </header>
+                <div class="modal-body">
 
-        <section id="grillaProyectos">
+                    <div class="modal-carrito">
 
-        <!--Media describiendo un breve portfolio de proyectos-->
+                        <div id="carrito-contenedor">
 
-        <h1 class="titulosSecciones">Proyectos</h1>
+                        </div>
+
+                        <p class="precioProducto"> Precio Total: $ <span id="precioTotal"></span></p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Confirmar Compra</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--Media describiendo un breve portfolio de proyectos-->
+
+    <!--    <h1 class="titulosSecciones">Productos</h1>
 
         <section id="fotografias">
 
@@ -91,7 +134,7 @@
 
             </div>
 
-            <!--Al ser las imágenes chicas y ya estar optimizadas con un optimizador online, no creo que para estos casos sea relevante el srcset-->
+            Al ser las imágenes chicas y ya estar optimizadas con un optimizador online, no creo que para estos casos sea relevante el srcset
         </section>
 
         <section id="Pinturas">
@@ -114,14 +157,14 @@
                 allowfullscreen></iframe>
             </div>
 
-        </section>
+        </section> -->
 
-        <footer>Seguinos en nuestras redes!
+    <footer>Seguinos en nuestras redes!
 
-            <li><a href="https://www.facebook.com/arte.immperfecta"> <i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/arte_immperfecta"> <i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/rociogarciacrespo/"> <i class="fab fa-linkedin"></i></a></li>
-        </footer>
+        <li><a href="https://www.facebook.com/arte.immperfecta"> <i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/arte_immperfecta"> <i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/rociogarciacrespo/"> <i class="fab fa-linkedin"></i></a></li>
+    </footer>
 
     </section>
 </body>

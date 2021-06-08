@@ -89,6 +89,23 @@ div {
   width: 80%;
   margin: auto; }
 
+#boton-carrito {
+  color: cornsilk;
+  background-color: #eec0c60c;
+  background-image: linear-gradient(315deg, #eec0c60e 0%, #7ee7fa0e 54%);
+  padding: 5px;
+  border-style: none;
+  margin-left: 10px; }
+  #boton-carrito:hover {
+    background-image: linear-gradient(315deg, #eec0c688 0%, #7ee7fa75 54%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.62rem; }
+
+.producto p {
+  padding: 0px !important;
+  margin: 10px 0px 10px 0px !important; }
+
 #grillaProyectos {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "fotografias pinturas videos" "fotografias pinturas videos" "pie pie pie";
@@ -135,6 +152,13 @@ section#mat {
 
 section#edg {
   grid-area: edg; }
+
+.producto {
+  width: 300px;
+  float: right; }
+
+.contenedor-productos {
+  margin-top: 500px; }
 
 @keyframes titulosSecciones {
   0% {
