@@ -12,6 +12,10 @@
     <title>Contacto</title>
     <!--aquí el nombre que aparecerá en la pestaña del navegador-->
 
+     <!--LINKEO jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!--LINKEO BOOSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -23,9 +27,9 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/473ae79e8d.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
-        
+    <script src="https://kit.fontawesome.com/473ae79e8d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/prueba.css">
 
     <script defer src="COMPONENTS/stock.js"></script>
@@ -54,7 +58,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="proyectos.html" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Proyectos
+                                Productos
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="proyectos.html">Fotografías</a>
@@ -75,7 +79,8 @@
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar en Casa Mansa</button>
-                        <button id="boton-carrito"> Shop! <i class="fas fa-shopping-cart"></i> <span id="contadorCarrito">0</span></button>
+                        <button id="boton-carrito"> Shop! <i class="fas fa-shopping-cart"></i> <span
+                                id="contadorCarrito">0</span></button>
                     </form>
                 </div>
             </nav>
@@ -90,7 +95,7 @@
     <div class="center">
         <!-- Button trigger modal -->
 
-        <button type="button" class="hablemos" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" id="btnAbrirFormulario" class="hablemos" data-toggle="modal" data-target="#exampleModal">
             Hablemos!
         </button>
 
@@ -147,7 +152,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" id="EliminarFormulario" class="btn btn-secondary"
+                        data-dismiss="modal">Eliminar</button>
                     <button type="button" id="EnviarFormulario" class="btn btn-primary">Enviar</button>
                 </div>
             </div>
