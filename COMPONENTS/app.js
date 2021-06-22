@@ -128,11 +128,11 @@ $(document).ready(function(){
     
     $("#EliminarFormulario").click(function () {
     setTimeout (function() {
-    location.reload(); }, 1000);
+    location.reload(); }, 5000);
     });
 
     $("#EnviarFormulario").click(function () {
         setTimeout (function() {
-        location.reload(); }, 1000);
+        location.reload(); }, 5000);
         });
-});
+}); 

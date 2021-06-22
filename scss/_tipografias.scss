@@ -10,6 +10,7 @@ $style-sections-width: 100%;
   font-family: $style-casa-mansa-font;
   position: relative;
   font-size: 9.375rem;
+  letter-spacing: 0rem;
   color: rgba(56, 67, 231, 0);
   text-align: center;
   -webkit-text-stroke: 0.3vh $style1-color;
@@ -39,7 +40,22 @@ h2 {
   margin: 5 rem;
 }
 
+.novedades {
+  font-family: $style-slim;
+  color: $style1-color;
+  font-size: 1.25 rem;
+  margin: 5 rem;
+}
+
 p {
+  font-family: $style-slim;
+  color: $style2-color;
+  font-size: 1.3rem;
+  margin: 20px 20px 50px 50px;
+  text-align: justify;
+}
+
+.pnovedades {
   font-family: $style-slim;
   color: $style2-color;
   font-size: 1.3rem;
